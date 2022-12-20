@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*----HEADER----*/  
+
+header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    background-color: rgb(249, 207, 0);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    word-spacing: 5px;
+}
+
+/*--Header logo--*/
+#logo{
+    position: relative;
+    left: 1%;
+ }
+ 
+ header img{
+     height: 150px;
+ }
+ 
+/*--Header navigationsbar--*/
+header a{
+    text-decoration: none;
+    color: black;
+    position:relative;
+    right: 25%;
+    transition: transform .2s;
+}
+
+
+
+/*-hover effekt så det er tydeligt at logo er fungerende som link*/
+header a :hover{
+    transform: scale(1.1);
+}
+
+
+/*--tekst over første billede på forsiden--*/
+#main{
+    position: relative;
+    text-align: center;
+    background-image:url("billeder/promobillede.jpg");
+    height: 800px;
+    
+}
+
+#main h1{
+    color: white;
+    font-size: 150px;
+    padding-top: 15%;
+}
+
+#main h3{
+    color: white;
+    font-size: 100px;
+}
+
+
+/*--OVERSKRIFT--*/
+.heading1{
+    color: black;
+    text-decoration: none;
+    font-size: 70px;
+    text-align:center; 
+    font-family: 'Hanken Grotesk', sans-serif;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+/*--Billeder af de 3 produkter (på forside og tilsvarende på produktsiden + tekst) placeret ved siden af hinanden ved hjælp af flexbox--*/
+.row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 10%;
+}
+
+ .column img{ 
+    width: 60%; /*bestemmer størrelse af billeder*/
+    transition: transform .2s;
+}
+
+/*--hover effekt for at synliggøre at det er links--*/
+.column img:hover{
+    transform: scale(1.1); /*110% zoom */
+}
+
+
+.column1 {
+    transition: transform .2s;
+   }
+
+.column1 a{
+    text-decoration: none;
+}
+
+.column1 h1 {
+    font-size: 46px;
+    color: black;
+    text-align: center; 
+    margin-bottom: 50%;
+    margin: 5%;
+}
+
+/*--hover effekt for at synliggøre at det er links--*/
+.column1 :hover{
+    transform: scale(1.1); 
+}
+
+
+/*--overskrfit 2 på forsiden--*/
+#heading2{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 40px;
+    color: black;
+    text-align: center; 
+    justify-content: center;
+    width: 100%;
+    transition: transform .2s;
+
+}
+
+#heading2 h1{
+   text-align: center; 
+    color: black;
+}
+
+#heading2 a{
+    text-decoration: none;
+}
+
+/*--hover effekt for at synliggøre at det er et link--*/
+#heading2 :hover{
+    transform: scale(1.1); 
+}
+
+
+/*--tekst over første billede på produktsiden--*/
+#main2{
+   
+    text-align: center;
+    background-image:url("billeder/promobillede2.jpg");
+    height: 800px;
+    
+    
+}
+
+#main2 h1{
+    color: white;
+    font-size: 150px;
+    padding-top: 15%;
+    
+}
+
+
+
+#main3{
+    color: black;
+    font-size: 50px;
+    padding-top: 15%;
+    text-align: center;
+    
+}
+
+
+/*--overskrift på "om os" med baggrundsfarve som fader ud--*/
+#container1 {
+    font-size: 60px;
+    padding: 16%;
+    text-align: center;
+    background-image: linear-gradient(white, rgb(249, 207, 0));
+}
+
+/*--Bruger flexbox til at sætte teksten ved siden af billede--*/
+#container2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2% 10% 3% 10%;
+    font-size: 23px;
+    line-height: 50px;
+}
+
+#container2 img {
+    padding-right: 3%;
+}
+
+
+/*--overskrift--*/
+#container3 h1{
+    text-align: center;
+    font-size: 55px;
+    padding: 7% 20% 0% 20%;
+    background-color:  rgb(249, 207, 0);
+    justify-content: center;
+   
+}
+
+/*--brødtekst--*/
+#container3 p{
+    align-items: center;
+    text-align: justify;
+    font-size: 23px;
+    padding: 5%;
+    line-height: 40px;
+    background-image: linear-gradient(rgb(249, 207, 0), white);
+}
+
+/*--siderne der viser de individuelle produkter--*/ 
+/*--bruger flexbox til at få billede og tekst ved siden af hinanden--*/
+.container4{
+    display: flex;
+    align-items: center;
+    padding: 2% 10% 5% 10%;
+}
+
+.container4 p{
+    font-size: 25px;
+    margin-right: 8%;
+    margin-bottom: 5%;
+}
+
+.container4 h1{
+    font-size: 100px;
+    margin-bottom: 5%;
+    margin-right: 8%;
+    margin-top: 13%;
+    align-items: flex-start;
+}
+
+
+/*--bruger flexbox til at få teksten opstillet ved siden af hinanden--*/
+.container5{
+    display: flex;
+    justify-content: space-between;
+    margin-left:10%;
+    margin-right: 10%;  
+    margin-bottom: 5%;
+    line-height: 20px;
+}
+
+
+.container5 h1{
+    font-size: 25px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+.container5 p{
+    font-size: 15px;
+
+}
+
+/*--hr som er bliver brugt som skille linje mellem overskrift og brødtekst--*/
+.container5 hr{
+    border-top: 2px solid black;
+}
+
+
+
+/*--EVENTSIDE--*/
+.pride{
+    text-align:left;
+    line-height: 50px;
+}
+
+.pride h1{
+    font-size: 50px;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.pride p{
+    font-size: 25px;
+    padding: 2% 10% 5% 10%;
+}
+
+.pride h2{
+    font-size: 35px;
+    padding-left: 10%;
+}
+
+.pride img{
+    width: 100%;
+} 
+
+/*--Class med alle span. Bruges til at ændre skrifttype på "Squash"--*/
+.span{
+    font-family: 'Lobster', cursive; 
+}
+
+/*-Bestemmer font for alle overskrifter og brødtekst-*/
+
+h1, h3, h2, p{
+    font-family: 'Hanken Grotesk', sans-serif; 
+}
+
+/*----FOOTER----*/
+.footer{
+    width: 100%;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-evenly;
+    color: black;
+    background-color:  rgb(249, 207, 0);   
+}
+
+/*----FOOTER TEXT----*/
+.footer h1{
+    margin-bottom: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.footer p{
+    line-height: 26px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 20px;  
+}
+
+/*----NYHEDSBREV----*/
+#column-two{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+form input{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/*----Knap til tilmelding----*/
+form button {
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 6px 17px;
+    cursor: pointer;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 13px;
+    transition: transform .2s;
+    margin-bottom: 30px;
+}
+
+form button :hover{
+    background-color: white;
+    transform:scale(1.1)
+}
+
+#column-three{
+    font-size: 30px;
+    transition: transform .2s;
+}
+
+#column-three :hover{
+    transform:scale(1.1)
+}
+
+
+/*---RESPONSIVE---*/
+/*-Starter mit media queries ret tidligt da jeg synes min side bliver pænere responsiv sådan-*/
+@media screen and (max-width:1090px) {
+   
+    .column{
+        margin-bottom: 10%;
+    }
+
+    /*- fjerner i mobil version-*/
+    .column1 {
+        display: none;
+    }
+
+    /*- ændrer i flexbos og placere items ved siden af hinanden i stedet-*/
+    #container2{
+        flex-direction: column;
+    }
+
+    .heading1 {
+        width: 100%;
+    }
+/*- fjerner i mobil version-*/
+#main h1, h3 {
+    display: none;
+}
+
+/*- fjerner i mobil version-*/
+#main2 h1, h3 {
+    display: none;
+}
+
+/*-ændrer skrifttyper-*/
+.heading1 {
+    font-size: 50px;
+}
+
+#heading2 {
+    font-size: 30px;
+}
+
+
+/*- ændrer i flexbos og placere items ved siden af hinanden i stedet-*/
+.container4{
+    flex-direction: column;
+    text-align: center;
+}
+
+.container5{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/*-FOOTER-*/
+/*- ændrer i flexbos og placere items ved siden af hinanden i stedet-*/
+.footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h1{
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+   
+}
+
+.footer p{
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+   
+}
+
+#column-three{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+}
+
+/*-mobil størrelse -*/
+@media screen and (max-width:767px) {
+    header {
+        font-size: 15px ;
+    }
+    #container1 h1 {
+        font-size: 50px;
+    }
+
+    #container3 h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:1090px) {
+    #main3 {
+        display:none;
+    }
+}
