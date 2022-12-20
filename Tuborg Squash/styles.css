@@ -437,6 +437,29 @@ form button :hover{
     text-align: center;
     margin-bottom: 10%;
 }
+}
+
+/*-- ændringer til når skærmen bliver endnu mindre--*/
+@media screen and (max-width:767px) {
+    header {
+        font-size: 15px ;
+    }
+    #container1 h1 {
+        font-size: 50px;
+    }
+
+    #container3 h1{
+        font-size: 40px;
+    }
+}
+
+
+/*-laptop størrelse -*/
+@media screen and (min-width:1090px) {
+    #main3 {
+        display:none;
+    }
+}
 
 /*-FOOTER-*/
 /*- ændrer i flexbos og placere items ved siden af hinanden i stedet-*/
@@ -467,24 +490,3 @@ form button :hover{
 }
 
 
-}
-
-/*-laptop størrelse -*/
-@media screen and (max-width:767px) {
-    header {
-        font-size: 15px ;
-    }
-    #container1 h1 {
-        font-size: 50px;
-    }
-
-    #container3 h1{
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width:1090px) {
-    #main3 {
-        display:none;
-    }
-}
