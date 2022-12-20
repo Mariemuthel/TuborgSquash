@@ -151,7 +151,6 @@ header a :hover{
 
 /*--tekst over første billede på produktsiden--*/
 #main2{
-   
     text-align: center;
     background-image:url("billeder/promobillede2.jpg");
     height: 800px;
@@ -219,6 +218,12 @@ header a :hover{
     line-height: 40px;
     background-image: linear-gradient(rgb(249, 207, 0), white);
 }
+
+
+#main-image1 img{
+ width: 100%;
+}
+
 
 /*--siderne der viser de individuelle produkter--*/ 
 /*--bruger flexbox til at få billede og tekst ved siden af hinanden--*/
@@ -464,7 +469,7 @@ form button :hover{
 
 }
 
-/*-mobil størrelse -*/
+/*-laptop størrelse -*/
 @media screen and (max-width:767px) {
     header {
         font-size: 15px ;
